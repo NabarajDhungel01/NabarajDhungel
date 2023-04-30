@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/navy.ico" type="image/x-icon" style="border-radius: 50%" />
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/credits.css" />
+    <link rel="stylesheet" href="assets/css/splash.css" />
+    <link rel="stylesheet" href="assets/css/snow.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/moon.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+
+    <link rel="stylesheet" href="assets/css/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/css/hero.css" />
+
+    <title>Mr NAVY</title>
+</head>
+<style>
+    :root {
+        /*  Dark Background */
+        --primary-bg-color: #07172c;
+        /* Dark Blue */
+        --secondary-bg-color: #0c2340;
+        /* Medium Dark Blue */
+        --primary-medium-color: #385181;
+        /* Medium Blue */
+        --secondary-medium-color: #6d92c7;
+        /* Light Blue */
+        --primary-text-color: #ffffff;
+        /* White */
+        --secondary-text-color: #c9d5e5;
+        /* Silver */
+        --h1-color: red;
+
+        /*  Light Background */
+
+        /*--primary-bg-color: #385181;*/
+        /*--secondary-bg-color: #6D92C7;*/
+        /*--primary-medium-color: ; */
+        /*--secondary-medium-color: ; */
+        /*--primary-text-color: ; */
+        /*--secondary-text-color: ; */
+        --darker-blue: #07172c;
+        --dark-blue: #0c2340;
+        --medium-blue: #385181;
+        --light-blue: #6d92c7;
+        --silver: #c9d5e5;
+        --white: #ffffff;
+    }
+
+    /*
+
+    * {
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+
+    */
+</style>
+
+<body>
+    <div class="draggable" id="moon" title="Use Arrow Keys or Mouse To Move" style="position: fixed !important"></div>
+
+    <div class="background-container">
+        <div class="background-animation"></div>
+    </div>
+
+    <div id="wrapper">
+        <section class="initials">
+            <div class="welcome" id="welcomeParent">
+                <span id="splash-overlay" class="splash"></span>
+                <span id="welcome" class="z-depth-4"></span>
+
+                <header id="header">
+                    <nav class="navbar">
+                        <div class="logo">
+                            <div class="moon" id="moon-rocket">
+                                <img src="https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/space-rocket-512.png"
+                                    style="width: 15px; height: 10px" class="loader" />
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <img id="logo" src="assets/img/navy.png" height="50px" width="50px" />
+                            <!-- <h1>NAVY</h1> -->
+                            <div class="name">
+                                <div class="letter">N</div>
+                                <div class="letter">A</div>
+                                <div class="letter">V</div>
+                                <div class="letter">Y</div>
+                            </div>
+                            <style>
+                                .name {
+                                    font-family: "Unica One";
+                                    font-size: 2.5rem;
+                                    color: var(--h1-color);
+                                    display: flex;
+                                    margin: auto;
+                                    padding: 1rem 1rem;
+                                    position: relative;
+                                }
+
+                                .name .letter {
+                                    display: inline-block;
+                                    opacity: 0;
+                                    transform: scale(0.9);
+                                }
+                            </style>
+
+                        </div>
+                        <div class="hamburger-menu"></div>
+                        <ul class="nav-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="credits">
+                    <footer>
+                        <p>
+                            Made<br />
+                            with<br />
+                            <strong>♡<br /></strong> by <br /><a target="_blank"
+                                href="https://www.github.com/nabarajdhungel01">
+                                Navy</a>
+                        </p>
+                    </footer>
+                </div>
+
+                <form class="color-picker" action="">
+                    <p>T<br />H<br />E<br /><span>M</span><br />E</p>
+
+                    <fieldset>
+                        <legend class="visually-hidden">Pick a color scheme</legend>
+                        <label for="light" class="visually-hidden">Light</label>
+                        <input type="radio" name="theme" id="light" checked />
+
+                        <label for="pink" class="visually-hidden">Pink theme</label>
+                        <input type="radio" id="pink" name="theme" />
+
+                        <label for="blue" class="visually-hidden">Blue theme</label>
+                        <input type="radio" id="blue" name="theme" />
+
+                        <label for="green" class="visually-hidden">Green theme</label>
+                        <input type="radio" id="green" name="theme" />
+
+                        <label for="yellow" class="visually-hidden">Yellow theme</label>
+                        <input type="radio" id="yellow" name="theme" />
+
+                        <label for="dark" class="visually-hidden">Dark theme</label>
+                        <input type="radio" id="dark" name="theme" />
+                    </fieldset>
+                </form>
+
+                <main>
+
+
+
+                    <!-- <section id="home" style="z-index: 5;"> -->
+                    <section id="home">
+                        <div id="particles-js"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 justify-content-center">
+                                    <h1 id="name" class="wow fadeIn">Nabaraj Dhungel.</h1>
+                                    <p id="tagline" class="wow fadeIn">I'm a Computer Enthusiast and Welcome to my   Website.</p> 
+                                    <div class="iam">I'm</div>
+                                    <div class="text"></div>
+
+                                    <div class="main-text">
+
+                                        <script
+                                            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+                                            integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+                                            crossorigin="anonymous"></script>
+                                        <div class="decode-text">
+                                            <div class="text-animation">W</div>
+                                            <div class="text-animation">e</div>
+                                            <div class="text-animation">l</div>
+                                            <div class="text-animation">c</div>
+                                            <div class="text-animation">o</div>
+                                            <div class="text-animation">m</div>
+                                            <div class="text-animation">e</div>
+                                            <div class="space"></div>
+                                            <div class="text-animation">t</div>
+                                            <div class="text-animation">o</div>
+                                            <div class="space"></div>
+                                            <div class="text-animation">m</div>
+                                            <div class="text-animation">y</div>
+                                            <div class="space"></div>
+                                            <div class="text-animation">s</div>
+                                            <div class="text-animation">i</div>
+                                            <div class="text-animation">t</div>
+                                            <div class="text-animation">e</div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <a href="#resume" id="learn-more" class="scroll-link wow fadeIn"><i
+                                            class="fa fa-angle-down"></i> Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </main>
+                <section class="projects">
+                    <div class="card">Magic Card</div>
+                </section>
+
+            </div>
+        </section>
+    </div>
+
+
+    <style>
+        .projects {
+            background-color: var(--primary-bg-color);
+        }
+    </style>
+</body>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/whiteMoon.js"></script>
+<script src="assets/js/hero.js"></script>
+<script src="assets/js/anime.js"></script>
+
+
+<script src="assets/js/js/particles.js"></script>
+<script src="assets/js/js/smooth-scroll.js"></script>
+<script src="assets/js/js/whiteMoon.js"></script>
+<!-- <script src="assets/js/js/wow.js"></script> -->
+
+
+
+<script>
+    var opac = anime({
+        targets: ".letter",
+        opacity: 1,
+        scale: 1,
+        easing: "easeInBounce",
+        delay: function (el, index) {
+            return index * 80;
+        },
+        direction: "alternate",
+        loop: true
+    });
+
+</script>
+
+</html>

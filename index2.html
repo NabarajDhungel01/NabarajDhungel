@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Animated Name</title>
+  <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #f1f1f1;
+      display: flex;
+    }
+    .name {
+      min-height: 100%;
+      height: auto;
+      font-family: "Unica One";
+      font-size: 4rem;
+      color: #16a085;
+      display: flex;
+      margin: auto;
+      padding: 0 1rem 1rem;
+      position: relative;
+    }
+    .name:before {
+      content: "";
+      width: 100%;
+      background: #16a085;
+      opacity: 0.3;
+      bottom: 0;
+      height: 1px;
+      left: 0;
+      position: absolute;
+    }
+    .name .letter {
+      display: inline-block;
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="name">
+    <div class="letter">N</div>
+    <div class="letter">A</div>
+    <div class="letter">V</div>
+    <div class="letter">Y</div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+    var opac = anime({
+      targets: '.letter',
+      opacity: 1,
+      scale: 1,
+      easing: 'easeInBounce',
+      delay: function(el, index) {
+        return index * 80;
+      },
+      direction: 'alternate',
+      loop: true
+    });
+  </script>
+</body>
+</html>
